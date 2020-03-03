@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Página inicial";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem Vindo</h1>
+</div>
+
+
+<div>
+    <form method="post">
+        Qual o seu nome? <input type="text" name="Nome" id="Nome" /><br />
+        Qual a sua idade? <input type="number" name="Anos" /><br />
+        <input type="submit" value="Enviar" />
+    </form>
+</div>
+
+
+@if (ViewBag.Resposta != "")
+{
+    <text>
+        <script>
+            alert("@ViewBag.Resposta");
+        </script>
+    </text>
+}
+
+
